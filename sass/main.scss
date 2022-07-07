@@ -37,10 +37,17 @@ h1 {
   font-size: 4rem;
 }
 
-p {
+p,
+li {
   font-size: 2rem;
 }
 
-.group1~div {
+p:nth-child(3n) {
   color: red;
+  font-weight: bold;
+}
+
+li::marker {
+  content: "🍕";
+  color: blue;
 }

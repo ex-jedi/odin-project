@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 10px;
   overflow-x: hidden;
@@ -28,11 +29,18 @@ h1 {
   font-size: 4rem;
 }
 
-p {
+p,
+li {
   font-size: 2rem;
 }
 
-.group1 ~ div {
+p:nth-child(3n) {
   color: red;
+  font-weight: bold;
+}
+
+li::marker {
+  content: "🍕";
+  color: blue;
 }
 /*# sourceMappingURL=main.css.map */
