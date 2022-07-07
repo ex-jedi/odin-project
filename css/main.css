@@ -64,4 +64,13 @@ li::marker {
   content: "🍕";
   color: blue;
 }
+
+img[src*="500"] {
+  outline: 2px dotted #f00;
+  width: 400px;
+}
+
+[data-animal=cat] {
+  border: 2px solid blue;
+}
 /*# sourceMappingURL=main.css.map */
