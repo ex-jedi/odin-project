@@ -31,4 +31,8 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+.group1 ~ div {
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */
