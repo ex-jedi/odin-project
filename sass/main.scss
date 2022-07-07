@@ -27,4 +27,12 @@ body {
   position: relative;
   overflow-x: hidden;
   @include main-font-stack;
+  padding: 100px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+  border-radius: 50%;
 }
