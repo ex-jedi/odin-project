@@ -30,11 +30,13 @@ body {
   @include heading-font-stack;
 }
 
+// Table styles
+
 table {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
 }
 
 td,
