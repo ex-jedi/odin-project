@@ -33,6 +33,10 @@ h1 {
   font-size: 4rem;
   font-style: italic;
   text-shadow: #FC0 3px 3px;
+  resize: horizontal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 p {
