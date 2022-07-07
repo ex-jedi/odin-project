@@ -28,3 +28,15 @@ body {
   overflow-x: hidden;
   @include main-font-stack;
 }
+
+.main {
+  padding: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+}
