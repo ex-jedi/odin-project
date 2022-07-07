@@ -1,0 +1,96 @@
+//*==============================================================================
+//** Colour, font stacks, media queries, that kind of thing  **
+//*==============================================================================
+
+//*=========================================
+//** Layout **
+//*=========================================
+
+//* Flex Mixin
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+//*=========================================
+//** Typography **
+//*=========================================
+
+//* Font Stacks
+@mixin heading-font-stack {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin main-font-stack {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//*=========================================
+//** Colours  **
+//*=========================================
+
+//  Colours
+$background-colour-light: #f4f1f0;
+$background-colour-dark: #1f1f1f;
+
+//  Font Colours
+$font-colour-light: #f4f1f0;
+$font-colour-dark: #252525;
+
+//*=========================================
+//** Media Queries   **
+//*=========================================
+
+//TODO: Delete unused media queries
+
+//********** Max Width **********
+
+@mixin breakpoint($point) {
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+//********** Min Width **********
+
+@mixin min-breakpoint($point) {
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+
+  @media (min-width: $point) {
+    @content;
+  }
+}
+
+//********** Height **********
+
+@mixin height-breakpoint($point) {
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+
+  @media (max-height: $point) {
+    @content;
+  }
+}
+
+//********** Width and Orientation **********
+
+@mixin width-orientation-breakpoint($point, $orientation: portrait) {
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+
+  @media (max-height: $point) and (orientation: $orientation) {
+    @content;
+  }
+}
