@@ -27,7 +27,7 @@ body {
   position: relative;
   overflow-x: hidden;
   padding: 20px;
-  @include heading-font-stack;
+  @include main-font-stack;
 }
 
 // Table styles
