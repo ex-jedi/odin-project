@@ -54,4 +54,30 @@ img {
 .clamp-image {
   width: clamp(100px, 50%, 1000px);
 }
+
+h4 {
+  font-size: 4rem;
+  margin: 0 auto 2rem;
+}
+
+p {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.clamp-para {
+  width: clamp(45ch, 50%, 75ch);
+}
+
+.max-para {
+  width: max(100%, 75ch);
+}
+
+.min-para {
+  width: min(100%, 75ch);
+}
+
+.clamp-heading {
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
 /*# sourceMappingURL=main.css.map */
