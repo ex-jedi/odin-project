@@ -40,3 +40,9 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+.fallback-para {
+  --font-colour-fallback: blue;
+
+  color: var(--font-colour-undeclared, var(--font-colour-fallback));
+}
