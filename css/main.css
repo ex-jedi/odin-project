@@ -15,62 +15,123 @@ html {
 body {
   margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.main {
-  padding: 100px;
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rgb(102, 51, 153);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10rem;
+  z-index: 2;
 }
 
-h1 {
+.main-nav a {
+  font-size: 2rem;
+  padding: 2rem;
+  color: #f4f1f0;
+}
+
+.main {
+  padding: 100px;
+  background-color: #f4f1f0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 400px;
+  height: 200px;
+  background-color: rebeccapurple;
+  margin: 20px;
+}
+
+h2 {
   font-size: 4rem;
 }
 
-p,
-li {
+p {
   font-size: 2rem;
 }
 
-p:nth-child(3n) {
-  color: red;
-  font-weight: bold;
+.sticky-container {
+  position: relative;
 }
 
-p::first-letter {
-  font-weight: bold;
-  text-transform: capitalize;
-  color: green;
+.sticky-heading {
+  position: sticky;
+  width: 100%;
+  height: 5rem;
+  top: 10rem;
+  background-color: skyblue;
+  left: 0;
 }
 
-.big-para::first-line {
-  color: rebeccapurple;
-  font-weight: bold;
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: greenyellow;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10rem 0;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+}
+.main-footer p {
+  width: 25%;
 }
 
-.smol-para::before {
-  content: "🍍🍍🍍";
-  display: block;
+.pic-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+  overflow: hidden;
 }
-
-.smol-para::after {
-  content: "🍉🍉🍉";
-  display: block;
-}
-
-li::marker {
-  content: "🍕";
-  color: blue;
-}
-
-img[src*="500"] {
-  outline: 2px dotted #f00;
-  width: 400px;
-}
-
-[data-animal=cat] {
-  border: 2px solid blue;
+.pic-container img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
