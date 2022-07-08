@@ -26,4 +26,58 @@ body {
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
+  @include main-font-stack;
+}
+
+.main {
+  padding: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p,
+li {
+  font-size: 2rem;
+}
+
+p:nth-child(3n) {
+  color: red;
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: green;
+}
+
+.big-para::first-line {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+.smol-para::before {
+  content: '🍍🍍🍍';
+  display: block;
+}
+
+.smol-para::after {
+  content: '🍉🍉🍉';
+  display: block;
+}
+
+li::marker {
+  content: "🍕";
+  color: blue;
+}
+
+img[src*="500"] {
+  outline: 2px dotted #f00;
+  width: 400px;
+}
+
+[data-animal="cat"] {
+  border: 2px solid blue;
 }
