@@ -8,9 +8,13 @@
 //** Custom Properties **
 //*=========================================
 
-:root {
-
-  --font-colour-fallback: blue;
+:root.light {
+  --background-colour: #fff;
+  --font-colour: #343434;
+  --border-colour: #000;
+  --background-colour-inverted: #000000;
+  --font-colour-inverted: #ffffff;
+  --border-colour-inverted: rgb(255, 255, 255);
 }
 
 // *=========================================
@@ -36,6 +40,7 @@ body {
   position: relative;
   overflow-x: hidden;
   @include main-font-stack;
+  background-color: var(--background-colour);
 }
 
 .main {
@@ -44,13 +49,25 @@ body {
 
 h1 {
   font-size: 4rem;
+  color: var(--font-colour);
 }
 
 p {
   font-size: 2rem;
+  color: var(--font-colour);
 }
 
-.fallback-para {
+.toggle-theme-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  color: var(--font-colour);
+  background-color: var(--background-colour);
+  border: 4px solid var(--border-colour);
+  transition: .3s all ease;
 
-  color: var(--font-colour-undeclared, var(--font-colour-fallback, blue));
+  &:hover {
+    color: var(--font-colour-inverted);
+    background-color: var(--background-colour-inverted);
+    border: 4px solid var(--border-colour-inverted);
+  }
 }
