@@ -33,6 +33,19 @@ body {
   padding: 100px;
 }
 
+.container {
+  @include flex(row);
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1 0 auto;
+  width: 400px;
+  height: 200px;
+  background-color: rebeccapurple;
+  margin: 20px;
+}
+
 h1 {
   font-size: 4rem;
 }

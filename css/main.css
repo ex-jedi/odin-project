@@ -24,6 +24,28 @@ body {
   padding: 100px;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 400px;
+  height: 200px;
+  background-color: rebeccapurple;
+  margin: 20px;
+}
+
 h1 {
   font-size: 4rem;
 }
