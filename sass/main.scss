@@ -50,6 +50,7 @@ body {
   overflow-x: hidden;
   @include main-font-stack;
   background-color: var(--background-colour);
+  transition: .3s all ease;
 }
 
 .main {
@@ -59,11 +60,13 @@ body {
 h1 {
   font-size: 4rem;
   color: var(--font-colour);
+  transition: .3s all ease;
 }
 
 p {
   font-size: 2rem;
   color: var(--font-colour);
+  transition: .3s all ease;
 }
 
 .toggle-theme-button {
