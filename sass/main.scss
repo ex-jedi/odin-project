@@ -89,3 +89,36 @@ p {
 .clamp-heading {
   font-size: clamp(1.5rem, 5vw, 5rem);
 }
+
+.min-image-container {
+  @include flex(row);
+  overflow-x: auto;
+
+  img {
+    margin: 0 1rem;
+    display: block;
+    width: min(100%, 500px);
+  }
+}
+
+.max-image-container {
+  @include flex(row);
+  overflow-x: auto;
+
+  img {
+    margin: 0 1rem;
+    display: block;
+    width: max(100%, 800px);
+  }
+}
+
+.clamp-image-container {
+  @include flex(row);
+  overflow-x: auto;
+
+  img {
+    margin: 0 1rem;
+    display: block;
+    width: clamp(320px, 50%, 800px);
+  }
+}

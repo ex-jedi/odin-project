@@ -80,4 +80,52 @@ p {
 .clamp-heading {
   font-size: clamp(1.5rem, 5vw, 5rem);
 }
+
+.min-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: auto;
+}
+.min-image-container img {
+  margin: 0 1rem;
+  display: block;
+  width: min(100%, 500px);
+}
+
+.max-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: auto;
+}
+.max-image-container img {
+  margin: 0 1rem;
+  display: block;
+  width: max(100%, 800px);
+}
+
+.clamp-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: auto;
+}
+.clamp-image-container img {
+  margin: 0 1rem;
+  display: block;
+  width: clamp(320px, 50%, 800px);
+}
 /*# sourceMappingURL=main.css.map */
