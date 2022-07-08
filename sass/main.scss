@@ -30,7 +30,7 @@ body {
 }
 
 .main {
-  padding: 100px;
+  padding: 10rem 1rem;
 }
 
 h1 {
@@ -90,21 +90,22 @@ p {
   font-size: clamp(1.5rem, 5vw, 5rem);
 }
 
-.min-image-container {
+
+.image-container {
   @include flex(row);
   overflow-x: auto;
+  margin-bottom: 20rem;
+}
 
+.min-image-container {
   img {
     margin: 0 1rem;
     display: block;
-    width: min(100%, 500px);
+    width: min(100%, 800px);
   }
 }
 
 .max-image-container {
-  @include flex(row);
-  overflow-x: auto;
-
   img {
     margin: 0 1rem;
     display: block;
@@ -113,12 +114,9 @@ p {
 }
 
 .clamp-image-container {
-  @include flex(row);
-  overflow-x: auto;
-
   img {
     margin: 0 1rem;
     display: block;
-    width: clamp(320px, 50%, 800px);
+    width: clamp(320px, 100vw, 800px);
   }
 }
