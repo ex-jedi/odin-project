@@ -1,3 +1,7 @@
+:root {
+  --font-colour-fallback: blue;
+}
+
 html {
   font-size: 10px;
   overflow-x: hidden;
@@ -33,7 +37,6 @@ p {
 }
 
 .fallback-para {
-  --font-colour-fallback: blue;
-  color: var(--font-colour-undeclared, var(--font-colour-fallback));
+  color: var(--font-colour-undeclared, var(--font-colour-fallback, blue));
 }
 /*# sourceMappingURL=main.css.map */
