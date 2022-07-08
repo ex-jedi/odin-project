@@ -31,4 +31,10 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+.colour-div {
+  background-color: rebeccapurple;
+  height: 100px;
+  width: calc(20% + 100px);
+}
 /*# sourceMappingURL=main.css.map */
