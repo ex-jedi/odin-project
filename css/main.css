@@ -7,6 +7,15 @@
   --border-colour-inverted: rgb(255, 255, 255);
 }
 
+:root.dark {
+  --background-colour: #343434;
+  --font-colour: #ffffff;
+  --border-colour: rgb(255, 255, 255);
+  --background-colour-inverted: #ffffff;
+  --font-colour-inverted: #000000;
+  --border-colour-inverted: rgb(103, 103, 103);
+}
+
 html {
   font-size: 10px;
   overflow-x: hidden;
