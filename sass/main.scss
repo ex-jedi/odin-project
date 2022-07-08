@@ -46,3 +46,20 @@ p {
   height: 100px;
   width: calc(20% + 100px);
 }
+
+img {
+  display: block;
+}
+
+.min-image {
+  margin: 10rem auto;
+  width: min(600px, 100%);
+}
+
+.max-image {
+  width: max(10%, 200px);
+}
+
+.clamp-image {
+  width: clamp(100px, 50%, 1000px);
+}
