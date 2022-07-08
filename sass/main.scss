@@ -25,19 +25,21 @@ html {
 body {
   margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
   @include main-font-stack;
 }
 
 .main-nav {
   @include flex(row);
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   background-color: rgb(102, 51, 153);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 10rem;
+  z-index: 2;
 }
 
 .main-nav a {
@@ -48,6 +50,7 @@ body {
 
 .main {
   padding: 100px;
+  background-color: $background-colour-light
 }
 
 .container {
@@ -64,6 +67,37 @@ body {
   margin: 20px;
 }
 
-h1 {
+h2 {
   font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.sticky-container {
+  position: relative;
+}
+
+.sticky-heading {
+  position: sticky;
+  width: 100%;
+  height: 5rem;
+  top: 10rem;
+  background-color: skyblue;
+  left: 0;
+}
+
+.main-footer {
+  @include flex(row);
+  background-color: greenyellow;
+  justify-content: space-around;
+  padding: 10rem 0;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+
+  p {
+    width: 25%;
+  }
 }
