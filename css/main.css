@@ -56,6 +56,14 @@ select {
   margin-bottom: 2rem;
 }
 
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
 .select-wrapper {
   position: relative;
   width: 100%;
