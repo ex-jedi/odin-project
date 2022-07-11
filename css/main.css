@@ -52,4 +52,8 @@ input {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+textarea {
+  resize: none;
+}
 /*# sourceMappingURL=main.css.map */
