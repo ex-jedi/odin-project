@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 10px;
   overflow-x: hidden;
@@ -55,6 +56,25 @@ select {
   margin-bottom: 2rem;
 }
 
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+.select-wrapper::after {
+  content: "▼";
+  font-size: 1rem;
+  top: 6px;
+  right: 5px;
+  position: absolute;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+}
+
 input[type=checkbox],
 input[type=radio] {
   accent-color: red;
@@ -71,6 +91,11 @@ button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 4rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #000;
+  color: #000;
 }
 
 legend {

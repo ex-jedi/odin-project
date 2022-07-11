@@ -29,22 +29,24 @@
       <input type="date" name="date" id="date">
       <label for="text-area">Text Area</label>
       <textarea name="textarea" id="textarea" cols="30" rows="10">Placeholder</textarea>
-      <select name="select" id="select">
-        <optgroup label="numbers">
-          <option value="one">one</option>
-          <option value="two">two</option>
-          <option value="three" selected>three</option>
-          <option value="four">four</option>
-          <option value="five">five</option>
-        </optgroup>
-        <optgroup label="moar numbers">
-          <option value="one">one</option>
-          <option value="two">two</option>
-          <option value="three" selected>three</option>
-          <option value="four">four</option>
-          <option value="five">five</option>
-        </optgroup>
-      </select>
+      <div class="select-wrapper">
+        <select name="select" id="select">
+          <optgroup label="numbers">
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three" selected>three</option>
+            <option value="four">four</option>
+            <option value="five">five</option>
+          </optgroup>
+          <optgroup label="moar numbers">
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three" selected>three</option>
+            <option value="four">four</option>
+            <option value="five">five</option>
+          </optgroup>
+        </select>
+      </div>
       <fieldset class="radio-wrapper">
         <legend>Radios</legend>
         <input type="radio" name="radio-one" id="radio-one">
