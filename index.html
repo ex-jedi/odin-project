@@ -24,7 +24,9 @@
       <label for="password">Password</label>
       <input type="password" name="password" id="password" minlength="6" maxlength="12">
       <label for="number">Number</label>
-      <input type="number" name="number" id="number" min="2" value="0">
+      <input type="number" name="number" id="number" min="2" max="6" value="0">
+      <label for="postcode">Postcode (Regex)</label>
+      <input type="text" name="postcode" id="postcode" pattern="^[a-zA-Z0-9\s]+$">
       <label for="date">Date</label>
       <input type="date" name="date" id="date">
       <label for="text-area">Text Area</label>
