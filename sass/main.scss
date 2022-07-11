@@ -47,50 +47,17 @@ html {
 body {
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
   @include main-font-stack;
   background-color: var(--background-colour);
   transition: .3s all ease;
 }
 
-.main-nav {
-  @include flex(row);
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(102, 51, 153);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10rem;
-  z-index: 2;
-}
-
-.main-nav a {
-  font-size: 2rem;
-  padding: 2rem;
-  color: $font-colour-light;
-}
-
 .main {
-  padding: 10rem 1rem;
+  padding: 100px;
 }
 
-.container {
-  @include flex(row);
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.content {
-  flex: 0 1 auto;
-  width: 400px;
-  height: 200px;
-  background-color: rebeccapurple;
-  margin: 20px;
-}
-
-h2 {
+h1 {
   font-size: 4rem;
   color: var(--font-colour);
   transition: .3s all ease;
