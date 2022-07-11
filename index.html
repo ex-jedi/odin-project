@@ -30,12 +30,29 @@
       <label for="text-area">Text Area</label>
       <textarea name="textarea" id="textarea" cols="30" rows="10">Placeholder</textarea>
       <select name="select" id="select">
-        <option value="one">one</option>
-        <option value="two">two</option>
-        <option value="three">three</option>
-        <option value="four">four</option>
-        <option value="five">five</option>
+        <optgroup label="numbers">
+          <option value="one">one</option>
+          <option value="two">two</option>
+          <option value="three" selected>three</option>
+          <option value="four">four</option>
+          <option value="five">five</option>
+        </optgroup>
+        <optgroup label="moar numbers">
+          <option value="one">one</option>
+          <option value="two">two</option>
+          <option value="three" selected>three</option>
+          <option value="four">four</option>
+          <option value="five">five</option>
+        </optgroup>
       </select>
+      <div class="radio-wrapper">
+        <input type="radio" name="radio-one" id="radio-one">
+        <label for="radio-one">Radio One</label>
+        <input type="radio" name="radio-one" id="radio-two">
+        <label for="radio-two">Radio Two</label>
+        <input type="radio" name="radio-one" id="radio-three">
+        <label for="radio-three">Radio Three</label>
+      </div>
     </form>
   </main>
   <script src="/scripts/minified/main-min.js"></script>
