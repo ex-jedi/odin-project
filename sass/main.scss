@@ -40,3 +40,19 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
