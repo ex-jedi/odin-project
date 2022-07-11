@@ -55,6 +55,11 @@ select {
   margin-bottom: 2rem;
 }
 
+input[type=checkbox],
+input[type=radio] {
+  accent-color: red;
+}
+
 textarea {
   resize: none;
 }
