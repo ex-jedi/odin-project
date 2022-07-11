@@ -19,7 +19,7 @@
       Hello world
     </h1>
     <form action="example.com/forms-path" method="post">
-      <label for="inpit-one">Enter some text</label>
+      <label for="input-one">Enter some text</label>
       <input type="text" name="input-one" id="input-one" placeholder="Words go here">
       <label for="password">Password</label>
       <input type="password" name="password" id="password">
@@ -45,22 +45,27 @@
           <option value="five">five</option>
         </optgroup>
       </select>
-      <div class="radio-wrapper">
+      <fieldset class="radio-wrapper">
+        <legend>Radios</legend>
         <input type="radio" name="radio-one" id="radio-one">
         <label for="radio-one">Radio One</label>
         <input type="radio" name="radio-one" id="radio-two" checked>
         <label for="radio-two">Radio Two</label>
         <input type="radio" name="radio-one" id="radio-three">
         <label for="radio-three">Radio Three</label>
-      </div>
-      <div class="checkbox-wrapper">
+      </fieldset>
+      <fieldset class="checkbox-wrapper">
+        <legend>Check Boxes</legend>
         <input type="checkbox" name="check-one" id="check-one" value="one">
         <label for="check-one">Check One</label>
         <input type="checkbox" name="check-two" id="check-two" value="two">
         <label for="check-two">Check Two</label>
         <input type="checkbox" name="check" id="check-three" value="three" checked>
         <label for="check-three">Check Three</label>
-      </div>
+      </fieldset>
+      <button type="submit">Submit Button</button>
+      <button type="reset">Reset Button</button>
+      <button type="button">Generic Button</button>
     </form>
   </main>
   <script src="/scripts/minified/main-min.js"></script>
