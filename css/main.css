@@ -27,6 +27,11 @@ body {
 
 .container {
   text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+  -ms-grid-columns: 1fr 4px 4fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
@@ -39,6 +44,9 @@ body {
 
 .header {
   background-color: #393f4d;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .menu ul,
@@ -46,8 +54,17 @@ body {
   font-size: 16px;
 }
 
+.menu li {
+  list-style-type: none;
+}
+
 .sidebar {
   background-color: #FF7755;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
 }
 
 .sidebar .photo {
@@ -67,15 +84,22 @@ body {
 
 .nav {
   background-color: #FF7755;
+  grid-column: 2/-1;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column: 2/-1;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 .article p {
@@ -104,10 +128,16 @@ body {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1/-1;
+  -ms-grid-row: 4;
+  grid-row: 4;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+  grid-column: 1/-1;
+  -ms-grid-row: 4;
+  grid-row: 4;
 }
 /*# sourceMappingURL=main.css.map */

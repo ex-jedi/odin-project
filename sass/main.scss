@@ -36,6 +36,9 @@ body {
 
 .container {
   text-align: center;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
@@ -44,10 +47,13 @@ body {
   font-family: Helvetica;
   font-weight: bold;
   color: white;
+
 }
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 .menu ul,
@@ -55,8 +61,14 @@ body {
   font-size: 16px;
 }
 
+.menu li {
+  list-style-type: none;
+}
+
 .sidebar {
   background-color: #FF7755;
+  grid-column: 1;
+  grid-row: 2 / 4;
 }
 
 .sidebar .photo {
@@ -77,15 +89,20 @@ body {
 
 .nav {
   background-color: #FF7755;
+  grid-column: 2 / -1;
+  grid-row: 2;
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column: 2 / -1;
+  grid-row: 3;
 }
 
 .article p {
@@ -114,9 +131,13 @@ body {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / -1;
+  grid-row: 4;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+  grid-column: 1 / -1;
+  grid-row: 4;
 }
