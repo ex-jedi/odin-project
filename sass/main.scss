@@ -78,17 +78,43 @@ div {
 .grid-container {
   width: 80%;
   height: 60vh;
-  display: grid;
-  grid-template: 100px 1fr /[start] 1fr [middle] 2fr [end];
-  grid-template-areas: 'top top''side main';
+  display: inline-grid;
+  grid-template: 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px;
+  gap: 1rem;
 }
 
-.grid-item {
-  border: 2px solid skyblue;
+.room {
+  border: 1px solid #000;
+  font-size: 2rem;
+  text-align: center;
   margin: 0;
 }
 
-.header {
-  background-color: lightblue;
-  grid-area: top;
+#living-room {
+  background-color: lightcyan;
+  grid-column: 1 / 6;
+  grid-row: 1 / 3;
+}
+
+#kitchen {
+  background-color: lightcoral;
+  grid-row: 3 / 6;
+  grid-column: 1 / 3;
+}
+
+#bathroom {
+  background-color: lightgoldenrodyellow;
+  grid-row: 3 / 6;
+  grid-column: 3 / 4;
+}
+
+#bedroom {
+  background-color: lightgreen;
+  grid-row: 3 / 5;
+  grid-column: 4 / 6;
+}
+
+#closet {
+  background-color: lightsalmon;
+  grid-column: 4 / 6;
 }
