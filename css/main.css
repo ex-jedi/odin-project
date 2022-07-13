@@ -86,9 +86,9 @@ div {
   height: 60vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px 1fr;
   -ms-grid-columns: 1fr 2fr;
       grid-template: 100px 1fr/[start] 1fr [middle] 2fr [end];
+      grid-template-areas: "top top" "side main";
 }
 
 .grid-item {
@@ -97,9 +97,10 @@ div {
 }
 
 .header {
-  background-color: lightblue;
   -ms-grid-row: 1;
-  grid-row: 1;
-  grid-column: start/end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  background-color: lightblue;
+  grid-area: top;
 }
 /*# sourceMappingURL=main.css.map */

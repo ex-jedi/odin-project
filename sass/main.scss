@@ -80,6 +80,7 @@ div {
   height: 60vh;
   display: grid;
   grid-template: 100px 1fr /[start] 1fr [middle] 2fr [end];
+  grid-template-areas: 'top top''side main';
 }
 
 .grid-item {
@@ -89,6 +90,5 @@ div {
 
 .header {
   background-color: lightblue;
-  grid-row: 1;
-  grid-column: start / end;
+  grid-area: top;
 }
