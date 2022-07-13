@@ -1,3 +1,4 @@
 # Notes
 
-[Odin Project Lesson](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-creating-a-grid)
+[MDN Grid Palcement](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)
+[CSS Grid Garden](https://cssgridgarden.com/)
