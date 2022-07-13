@@ -34,6 +34,11 @@ body {
 }
 
 .grid-container {
+  img {
+    width: 50px;
+    height: auto;
+  }
+
   resize: both;
   overflow: auto;
   border: 2px solid grey;
@@ -48,6 +53,6 @@ body {
   background-color: #444;
   text-align: center;
   color: #ddd;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 12px;
 }

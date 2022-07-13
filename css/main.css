@@ -87,12 +87,16 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 9;
 }
+.grid-container img {
+  width: 50px;
+  height: auto;
+}
 
 .grid-item {
   background-color: #444;
   text-align: center;
   color: #ddd;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 12px;
 }
 /*# sourceMappingURL=main.css.map */
