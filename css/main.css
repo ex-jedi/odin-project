@@ -87,8 +87,11 @@ div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
-      grid-template: 100px 1fr/[start] 1fr [middle] 2fr [end];
-      grid-template-areas: "top top" "side main";
+  grid-template: 100px 1fr/[start] 1fr [middle] 2fr [end];
+  grid-template-areas:
+    "top top"
+    "side main";
+  align-items: center;
 }
 
 .grid-item {
