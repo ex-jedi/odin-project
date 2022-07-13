@@ -33,8 +33,11 @@ body {
   padding: 100px;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 4rem;
+  width: 100%;
+  flex: 1 1 auto;
 }
 
 p {
@@ -70,4 +73,12 @@ div {
     height: 250px;
     object-fit: cover;
   }
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-item {
+  margin: 0;
 }
