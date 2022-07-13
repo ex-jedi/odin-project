@@ -35,7 +35,7 @@ body {
 
 .grid-container {
   img {
-    height: 60px;
+    // height: 60px;
   }
 
   p {
@@ -49,13 +49,15 @@ body {
   display: grid;
   gap: 4px;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 150px) repeat(3, 1fr);
+  grid-template-columns: repeat(5, minmax(150px, 200px));
 }
 
 .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #444;
-  text-align: center;
   color: #ddd;
   font-size: 1.5rem;
-  padding: 12px;
 }

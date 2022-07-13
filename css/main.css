@@ -34,8 +34,8 @@ body {
   gap: 4px;
   -ms-grid-rows: 1fr 4px 1fr;
   grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: 150px 4px 150px 4px 1fr 4px 1fr 4px 1fr;
-  grid-template-columns: repeat(2, 150px) repeat(3, 1fr);
+  -ms-grid-columns: minmax(150px, 200px) 4px minmax(150px, 200px) 4px minmax(150px, 200px) 4px minmax(150px, 200px) 4px minmax(150px, 200px);
+  grid-template-columns: repeat(5, minmax(150px, 200px));
 }
 
 .grid-container > *:nth-child(1) {
@@ -87,18 +87,26 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 9;
 }
-.grid-container img {
-  height: 60px;
-}
 .grid-container p {
   margin-top: 12px auto 24;
 }
 
 .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #444;
-  text-align: center;
   color: #ddd;
   font-size: 1.5rem;
-  padding: 12px;
 }
 /*# sourceMappingURL=main.css.map */
