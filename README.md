@@ -1,3 +1,3 @@
 # Notes
 
-[CSS Diner](https://flukeout.github.io/)
+[Odin Project Lesson](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-creating-a-grid)
