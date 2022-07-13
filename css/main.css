@@ -32,6 +32,10 @@ p {
   font-size: 2rem;
 }
 
+div {
+  margin-bottom: 8rem;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,5 +57,22 @@ p {
   margin: 0;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.masonry-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+.masonry-wrapper img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

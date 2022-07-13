@@ -41,6 +41,10 @@ p {
   font-size: 2rem;
 }
 
+div {
+  margin-bottom: 8rem;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -54,4 +58,16 @@ p {
   margin: 0;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.masonry-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  img {
+    flex: 1 1 200px;
+    height: 250px;
+    object-fit: cover;
+  }
 }
