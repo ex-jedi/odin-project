@@ -76,14 +76,19 @@ div {
 }
 
 .grid-container {
+  width: 80%;
+  height: 60vh;
   display: grid;
-  grid-template-columns: 100px 100px;
-  grid-template-rows: 100px 100px;
-  grid-auto-rows: 100px 500px;
-  gap: 1rem;
+  grid-template: 100px 1fr /[start] 1fr [middle] 2fr [end];
 }
 
 .grid-item {
   border: 2px solid skyblue;
   margin: 0;
+}
+
+.header {
+  background-color: lightblue;
+  grid-row: 1;
+  grid-column: start / end;
 }
