@@ -47,7 +47,7 @@ body {
   display: grid;
   gap: 4px;
   grid-template-rows: repeat(2, clamp(150px, 50%, 350px));
-  grid-template-columns: repeat(5, clamp(100px, 20%, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid-item {

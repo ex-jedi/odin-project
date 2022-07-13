@@ -35,58 +35,7 @@ body {
   gap: 4px;
   -ms-grid-rows: clamp(150px, 50%, 350px) 4px clamp(150px, 50%, 350px);
   grid-template-rows: repeat(2, clamp(150px, 50%, 350px));
-  -ms-grid-columns: clamp(100px, 20%, 250px) 4px clamp(100px, 20%, 250px) 4px clamp(100px, 20%, 250px) 4px clamp(100px, 20%, 250px) 4px clamp(100px, 20%, 250px);
-  grid-template-columns: repeat(5, clamp(100px, 20%, 250px));
-}
-
-.grid-container > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid-container > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.grid-container > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.grid-container > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-
-.grid-container > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 9;
-}
-
-.grid-container > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.grid-container > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.grid-container > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
-.grid-container > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-}
-
-.grid-container > *:nth-child(10) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 9;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .grid-container p {
   margin-top: 12px auto 24;
