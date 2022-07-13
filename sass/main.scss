@@ -54,15 +54,33 @@ body {
   background-color: #393f4d;
   grid-column: 1 / -1;
   grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  .logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
 }
 
-.menu ul,
-.menu li {
-  font-size: 16px;
-}
+.menu {
+  display: grid;
+  align-items: center;
 
-.menu li {
-  list-style-type: none;
+  ul,
+  li {
+    font-size: 16px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .sidebar {
