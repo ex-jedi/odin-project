@@ -43,25 +43,13 @@ p {
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(200px, 1fr);
-  grid-gap: 8px;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 10px;
+  margin-bottom: 2rem;
 }
 
 .child {
-  background: orange;
-  text-align: center;
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.last-row {
-  grid-column: 1 / 3;
-}
-
-.child>div {
-  height: 50px;
-  background: darkred;
-  flex: 0 1 30%;
+  min-height: 100px;
+  background: pink;
 }
