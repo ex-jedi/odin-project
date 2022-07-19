@@ -29,11 +29,16 @@ function removeItem(e) {
   }
   // Get remaining Elements
   const itemsList = document.querySelectorAll('.items');
+  // Loop through them
   itemsList.forEach((item, index) => {
+    // Remove the apear class so the animation doesn't trigger
     item.classList.remove('appear');
+    // Add event listener to remove the animate class after the animation runs
     item.addEventListener('animationend', () => item.classList.remove('animate'), { once: true });
-    item.innerText = index + 1;
+    // Add the animate class (it'll be removed after it runs )
     item.classList.add('animate');
+    // Add the new items count to each item
+    item.innerText = index + 1;
   });
 }
 
