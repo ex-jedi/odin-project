@@ -35,9 +35,10 @@ p {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 2rem auto 2rem auto 2rem auto;
+  grid-template-columns: repeat(4, auto);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

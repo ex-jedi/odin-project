@@ -44,7 +44,13 @@ p {
 }
 
 .wrapper {
-  display: flex;
+  // * Unknown content width with Flexbox
+  // display: flex;
+  // justify-content: center;
+  // column-gap: 2rem;
+  // * Unknown content width with CSS Grid
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   column-gap: 2rem;
 }
