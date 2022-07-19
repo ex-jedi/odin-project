@@ -31,4 +31,17 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+.layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.child {
+  min-height: 100px;
+  background: pink;
+}
 /*# sourceMappingURL=main.css.map */
