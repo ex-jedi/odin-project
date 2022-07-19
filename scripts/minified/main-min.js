@@ -1,2 +1,2 @@
-!function(){const e=document.querySelector(".add-element-button");let n=6;e.addEventListener("click",(function(){const e=document.querySelector(".wrapper"),t=`<div class='added-div'>${n}</div>`;n++,console.log(n),e.insertAdjacentHTML("beforeend",t)}))}();
+!function(){const e=document.querySelector(".add-element-button");let n=6;e.addEventListener("click",(function(){const e=document.querySelector(".wrapper"),t=`<div class='added-div'>${n}</div>`;console.log(n),e.insertAdjacentHTML("beforeend",t),n+=1}))}();
 //# sourceMappingURL=main-min.js.map
