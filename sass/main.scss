@@ -58,8 +58,7 @@ p {
   padding: 0.5rem 2rem;
 }
 
-.items,
-.added-div {
+.items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,12 +66,30 @@ p {
   color: #fff;
   font-weight: bold;
   background-color: orange;
+}
+
+.appear {
   animation: appear .33s ease;
+}
+
+.animate {
+  animation: recount .33s ease;
 }
 
 @keyframes appear {
   from {
     transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes recount {
+  from {
+    transform: scale(0.8);
   }
 
   to {
