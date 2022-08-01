@@ -13,3 +13,9 @@ const myObject = {
     // Stuff
   },
 };
+// Dot notation
+console.log(myObject.anotherProperty);
+
+// Dot notation
+// eslint-disable-next-line dot-notation
+console.log(myObject['anotherProperty']);
