@@ -35,7 +35,7 @@ body {
   background-color: skyblue;
   -ms-grid-rows: 1fr 4px 1fr;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .grid-item {
