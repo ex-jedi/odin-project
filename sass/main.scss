@@ -42,40 +42,40 @@ body {
   border: 1px solid grey;
   background-color: skyblue;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(5, clamp(150px, 20%, 200px);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
 
-  .grid-item {
-    background-color: #444;
-    text-align: center;
-    color: #ddd;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    padding: 12px;
-  }
+.grid-item {
+  background-color: #444;
+  text-align: center;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+p {
+  margin: 12px auto 24px;
+}
+
+img {
+  height: 60px;
+}
+
+.clamp-div {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  background-color: rebeccapurple;
+  height: 300px;
+  width: clamp(400px, 80%, 1000px);
 
   p {
-    margin: 12px auto 24px;
+    height: auto;
+    font-size: 4rem;
+    color: #fff;
+    margin: 0;
+    padding: 0;
   }
-
-  img {
-    height: 60px;
-  }
-
-  .clamp-div {
-    @include flex(column);
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    background-color: rebeccapurple;
-    height: 300px;
-    width: clamp(400px, 80%, 1000px);
-
-    p {
-      height: auto;
-      font-size: 4rem;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-  }
+}
