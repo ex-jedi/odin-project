@@ -35,8 +35,8 @@ body {
   background-color: skyblue;
   -ms-grid-rows: 1fr 4px 1fr;
   grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: 2fr 4px 2fr 4px 1fr 4px 1fr 4px 1fr;
-  grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+  -ms-grid-columns: 125px 4px 125px 4px 1fr 4px 1fr 4px 1fr;
+  grid-template-columns: repeat(2, 125px) repeat(3, 1fr);
 }
 
 .grid-container > *:nth-child(1) {
