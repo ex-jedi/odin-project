@@ -6,3 +6,10 @@
 // ** Imported  **
 // *==============================================================================
 
+const myObject = {
+  property: 'Value',
+  anotherProperty: 88,
+  method() {
+    // Stuff
+  },
+};
