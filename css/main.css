@@ -35,8 +35,8 @@ body {
   background-color: skyblue;
   -ms-grid-rows: 1fr 4px 1fr;
   grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: minmax(150px, 200px) 4px minmax(150px, 200px) 4px minmax(150px, 200px) 4px minmax(150px, 200px) 4px minmax(150px, 200px);
-  grid-template-columns: repeat(5, minmax(150px, 200px));
+  -ms-grid-columns: clamp(150px, 20%, 200px) 4px clamp(150px, 20%, 200px) 4px clamp(150px, 20%, 200px) 4px clamp(150px, 20%, 200px) 4px clamp(150px, 20%, 200px);
+  grid-template-columns: repeat(5, clamp(150px, 20%, 200px));
 }
 
 .grid-container > *:nth-child(1) {
@@ -123,7 +123,7 @@ img {
   margin: 2rem auto;
   background-color: rebeccapurple;
   height: 300px;
-  width: clamp(400px, 80%, 1500px);
+  width: clamp(400px, 80%, 1000px);
 }
 .clamp-div p {
   height: auto;
