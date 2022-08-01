@@ -61,3 +61,21 @@ p {
 img {
   height: 60px;
 }
+
+.clamp-div {
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  background-color: rebeccapurple;
+  height: 300px;
+  width: clamp(400px, 80%, 1500px);
+
+  p {
+    height: auto;
+    font-size: 4rem;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+}
