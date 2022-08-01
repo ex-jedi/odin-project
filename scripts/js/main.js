@@ -31,7 +31,7 @@ function removeItem(e) {
   const itemsList = document.querySelectorAll('.items');
   // Loop through them
   itemsList.forEach((item, index) => {
-    // Remove the apear class so the animation doesn't trigger
+    // Remove the appear class so the animation doesn't trigger
     item.classList.remove('appear');
     // Add event listener to remove the animate class after the animation runs
     item.addEventListener('animationend', () => item.classList.remove('animate'), { once: true });
