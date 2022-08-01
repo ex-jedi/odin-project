@@ -33,10 +33,10 @@ body {
   padding: 4px;
   border: 1px solid grey;
   background-color: skyblue;
-  -ms-grid-rows: 1fr 4px 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: 125px 4px 125px 4px 1fr 4px 1fr 4px 1fr;
-  grid-template-columns: repeat(2, 125px) repeat(3, 1fr);
+  -ms-grid-rows: min(200px, 50%) 4px min(200px, 50%);
+  grid-template-rows: repeat(2, min(200px, 50%));
+  -ms-grid-columns: max(120px, 15%) 4px max(120px, 15%) 4px max(120px, 15%) 4px max(120px, 15%) 4px max(120px, 15%);
+  grid-template-columns: repeat(5, max(120px, 15%));
 }
 
 .grid-container > *:nth-child(1) {
