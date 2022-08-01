@@ -48,6 +48,8 @@ p {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  // justify-items: start;
+  // align-items: start;
   grid-auto-rows: 100px;
 }
 
