@@ -40,10 +40,16 @@ function Book(title, author, pages, read) {
   this.author = author;
   this.pages = pages;
   this.read = read;
-  this.info = function () {
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read ? 'read' : 'not read yet'}.`;
-  };
 }
+
+Book.prototype = {
+  info() {
+    return `${this.title} by ${this.author} - ${this.pages} pages.`;
+  },
+  haveIRead() {
+    return ` I have ${this.read ? 'read' : 'not yet read'} ${this.title}.`;
+  },
+};
 
 const bookOne = new Book('Dune', 'Frank Herbert', 999, true);
 const bookTwo = new Book('The Silmarillion', ' J. R. R. Tolkien', 365, false);
