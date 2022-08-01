@@ -26,12 +26,24 @@ function Player(name, marker) {
   this.name = name;
   this.marker = marker;
   this.sayName = function () {
-    console.log(this.name);
+    console.log(name);
   };
 }
 
 const playerOne = new Player('Dug', 'X');
+const playerTwo = new Player('Jen', 'O');
+
 console.log(playerOne.name);
 
-const heading = document.querySelector('H1');
-console.log(heading);
+function Book(title, author, pages, read) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+  this.info = function () {
+    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read ? 'read' : 'not read yet'}.`;
+  };
+}
+
+const bookOne = new Book('Dune', 'Frank Herbert', 999, true);
+const bookTwo = new Book('The Silmarillion', ' J. R. R. Tolkien', 365, false);
